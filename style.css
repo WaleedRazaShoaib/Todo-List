@@ -1,8 +1,9 @@
+
 * {
     margin: 0%;
     padding: 0%;
 }
-
+/* ================= Navbar Styling  */
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
@@ -14,13 +15,18 @@
     font-size: 30px;
 }
 
+/* Body Styling */
+
 .container {
+    margin-top: 20px;
     border-radius: 15px;
-    height: 100px;
+    height: auto;
+    padding-bottom: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 #newtask {
+    height: 100px;
     padding-top: 20px;
     margin-left: 5% !important;
 }
@@ -35,17 +41,21 @@
 }
 
 #btnwork {
+    margin-top: 5px;
     box-shadow: rgba(50, 230, 125, 0.25) 0px 30px 60px -12px inset, rgba(17, 235, 115, 0.3) 0px 18px 36px -18px inset;
-    color:black;
+    color: black;
     font-size: 20px;
-border-radius: 10px;
+    border-radius: 10px;
     height: 40px;
     width: 10%;
 }
-#updatevalue{
-    color:black;
+/* ============== WORK ON WHEN JAVASCRIPT CODE RUN =================== */
+
+.updateInput {
+    box-shadow: rgba(50, 230, 125, 0.25) 0px 30px 60px -12px inset, rgba(17, 235, 115, 0.3) 0px 18px 36px -18px inset;
     font-size: 20px;
-     border-radius: 10px;
-    height: 40px;
-    width: 10%;
+    padding-left: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: 60px;
 }
