@@ -3,10 +3,10 @@
     margin: 0%;
     padding: 0%;
 }
-/* ================= Navbar Styling  */
+
+/* ================= Navbar Styling */
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
 }
 
 #title {
@@ -14,15 +14,22 @@
     color: white;
     font-size: 30px;
 }
+#LogOutbtn{
+    margin-top: 5px;
+    box-shadow:#0D6EFD 0px 0px 20px -10px inset,#0D6EFD 0px 18px 36px -25px inset;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 10%;
+}
 
 /* Body Styling */
-
 .container {
     margin-top: 20px;
     border-radius: 15px;
-    height: auto;
     padding-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(70, 100, 234, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 #newtask {
@@ -31,8 +38,10 @@
     margin-left: 5% !important;
 }
 
-#userinput {
-    box-shadow: rgba(50, 230, 125, 0.25) 0px 30px 60px -12px inset, rgba(17, 235, 115, 0.3) 0px 18px 36px -18px inset;
+#userinput,
+.updateInput {
+    border: none;
+    box-shadow:#0D6EFD 0px 0px 20px -10px inset,#0D6EFD 0px 18px 36px -25px inset;
     font-size: 20px;
     padding-left: 20px;
     border-radius: 10px;
@@ -42,20 +51,34 @@
 
 #btnwork {
     margin-top: 5px;
-    box-shadow: rgba(50, 230, 125, 0.25) 0px 30px 60px -12px inset, rgba(17, 235, 115, 0.3) 0px 18px 36px -18px inset;
+    box-shadow:#0D6EFD 0px 0px 20px -10px inset,#0D6EFD 0px 18px 36px -25px inset;
     color: black;
     font-size: 20px;
     border-radius: 10px;
     height: 40px;
     width: 10%;
 }
-/* ============== WORK ON WHEN JAVASCRIPT CODE RUN =================== */
 
-.updateInput {
-    box-shadow: rgba(50, 230, 125, 0.25) 0px 30px 60px -12px inset, rgba(17, 235, 115, 0.3) 0px 18px 36px -18px inset;
-    font-size: 20px;
-    padding-left: 20px;
-    border-radius: 10px;
-    width: 80%;
-    height: 60px;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #newtask {
+        margin-left: 0;
+    }
+
+    #userinput,
+    .updateInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #btnwork {
+        width: 100%;
+    }
+
+    .container {
+        margin: 10px;
+        height: 170px;
+        justify-content: space-between;
+    }
 }
+

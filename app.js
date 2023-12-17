@@ -2,16 +2,24 @@
 
 let userinput = document.getElementById("userinput");
 let allwork = document.getElementById("allwork");
+let LogOutbtn = document.getElementById("LogOutbtn");
+let  btnwork = document.getElementById("btnwork")
+
+
+// 
+const LogOut = ()=>{
+userinput.style.display="none"
+}
+LogOutbtn.addEventListener("click",LogOut)
 
 // FUNCTION TO ADD WORK ON EMPTY DIV ON HTML
 
-function uploadWork() {
-
+const addtodo = () => {
     // CONDITION CHECK IF VALUE NOT EQUAL TO "" SO DO THIS WORK
     if (userinput.value.trim() !== "") {
         allwork.innerHTML += `
-<div class="container bg-success" >
-<h2>${userinput.value}</h2>
+        <div class="container" >
+        <h2>${userinput.value}</h2>
 <input type="text" id="updatevalue" class ="updateInput" placeholder="Write the Edit Todo"style ="display:none;">
 <span class="edit">
 <button style ="display:none;" onclick="update(this)" id="btnwork">UPDATE</button>
@@ -32,6 +40,7 @@ function uploadWork() {
     //  AFTER THE ADD ON TODO VALUE SHOULD BE "" STRING
     userinput.value = ""
 }
+btnwork.addEventListener("click",addtodo)
 
 // FUNCTION TO EDIT THE TODO VALUE
 
