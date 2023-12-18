@@ -49,7 +49,7 @@
     height: 60px;
 }
 
-#btnwork {
+.btnwork {
     margin-top: 5px;
     box-shadow:#0D6EFD 0px 0px 20px -10px inset,#0D6EFD 0px 18px 36px -25px inset;
     color: black;
@@ -60,7 +60,7 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 468px) {
     #newtask {
         margin-left: 0;
     }
@@ -74,10 +74,13 @@
     #btnwork {
         width: 100%;
     }
-
+button{
+    width: 100%;
+    height: auto;
+}
     .container {
         margin: 10px;
-        height: 170px;
+        height: 180px;
         justify-content: space-between;
     }
 }
