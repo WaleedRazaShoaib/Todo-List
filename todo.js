@@ -86,3 +86,6 @@ function deleted(l) {
     allremove.remove();
 }
 
+if(true){
+console.log(true)
+}
