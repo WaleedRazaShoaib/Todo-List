@@ -5,15 +5,6 @@ let allwork = document.getElementById("allwork");
 let LogOutbtn = document.getElementById("LogOutbtn");
 let  btnwork = document.getElementById("btnwork")
 
-
-// 
-const LogOut = ()=>{
-userinput.style.display="none"
-}
-LogOutbtn.addEventListener("click",LogOut)
-
-// FUNCTION TO ADD WORK ON EMPTY DIV ON HTML
-
 const addtodo = () => {
     // CONDITION CHECK IF VALUE NOT EQUAL TO "" SO DO THIS WORK
     if (userinput.value.trim() !== "") {
@@ -22,9 +13,9 @@ const addtodo = () => {
         <h2>${userinput.value}</h2>
 <input type="text" id="updatevalue" class ="updateInput" placeholder="Write the Edit Todo"style ="display:none;">
 <span class="edit">
-<button style ="display:none;" onclick="update(this)" id="btnwork">UPDATE</button>
-<button onclick="edit(this)" id="btnwork">EDIT</button>
-<button onclick ="deleted(this)" id="btnwork"> DELETE</button>
+<button style ="display:none;" onclick="update(this)" id="btnwork" class="editbtnwork">UPDATE</button>
+<button onclick="edit(this)" id="btnwork" class="editbtnwork"><i class="fa-solid fa-pen"></i>EDIT</button>
+<button onclick ="deleted(this)" id="btnwork" class="editbtnwor"><i class="fa-solid fa-trash"></i> DELETE</button>
 </span>
 </div>
 `

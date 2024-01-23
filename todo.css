@@ -85,3 +85,28 @@ button{
     }
 }
 
+
+
+.editbtnwork{
+    margin-top: 10px;
+    box-shadow:#0D6EFD 0px 0px 20px -10px inset,#0D6EFD 0px 18px 36px -25px inset;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 10%;    
+    padding: 0px 5px;
+}
+.editbtnwor{
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 10%;  
+    background-color: #D11A2C;
+}
+
+.editbtnwork li{
+margin-right: 5px;
+} 
